@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love you Aadi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensures padding doesn't break layouts */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden; /* Prevents horizontal overflow */
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Distribute space between elements */
+            padding: 20px;
+            background-color: lightpink;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .background {
+            background: lightpink;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            border-radius: 50px;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-list li a:hover {
+            color: grey;
+        }
+
+        .rightNav {
+            display: flex;
+            align-items: center;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+
+        .btn-sm {
+            padding: 6px 10px;
+            margin-left: 10px;
+        }
+
+        .firstsection, .secondsection {
+            height: auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .firstsection {
+            background-color: RGB(116, 241, 116);
+        }
+
+        .secondsection {
+            background-color: RGB(95, 95, 160);
+        }
+
+        .text-big {
+            font-family: 'Comic Sans MS', cursive;
+            font-weight: bold;
+            font-size: 35px;
+            color: white;
+        }
+
+        .text-small {
+            font-size: 18px;
+            color: white;
+            overflow: visible; /* Ensure overflow is visible */
+            white-space: normal; /* Allow text to wrap normally */
+            max-width: 100%; /* Ensure it uses the full width of the parent */
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: lightcoral;
+        }
+
+        .paras {
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+
+        /* Adding kittens on the side */
+        .kittens {
+            position: fixed;
+            top: 150px;
+            left: 0;
+            width: 100px;
+        }
+
+        .kittens img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        /* Bubble pop game */
+        .bubble {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            animation: bubblePop 5s infinite ease-in;
+        }
+
+        @keyframes bubblePop {
+            0% { bottom: 0; opacity: 1; }
+            100% { bottom: 100%; opacity: 0; }
+        }
+
+        #game {
+            position: relative;
+            height: 500px;
+            background-color: lightyellow;
+            overflow: hidden;
+        }
+
+        /* Highlighting search results */
+        .highlight {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://i.pinimg.com/564x/a0/2e/f1/a02ef1e0b96560e96f4078335ed0d4e8.jpg">
+        </div>
+        <ul class="nav-list">
+            <li><a href="#web">I love Aadi</a></li>
+            <li><a href="#program">How You Make Me Feel</a></li>
+            <li><a href="#course">Bubbles!</a></li>
+        </ul>
+
+        <div class="rightNav">
+            <input type="text" name="search" id="search" placeholder="Search...">
+            <button class="btn btn-sm" onclick="searchText()">Search</button>
+        </div>
+    </nav>
+
+    <section class="firstsection">
+        <div class="box-main">
+            <h1 class="text-big" id="web">
+                Why?
+            </h1>
+            <p class="text-small">
+                Because you deserve everything. You deserve all the love in this world and more. You should never feel like a burden because you're quite the opposite- you bring light wherever you go. You make people so happy. You make me so happy, like a shot of espresso. You remind me of the color pink, of sunny mornings, of kittens, and romantic songs. There’s no one quite like you in this world. I can always hear your laughter, and when I close my eyes, I see your beautiful smile. I want to see you become the happiest person in the world because that’s what you deserve. You make me so proud every single day; you achieve things I could only dream of, and I promise to support you in fulfilling every dream of yours. We complete each other.
+            </p>
+        </div>
+    </section>
+
+    <section class="secondsection">
+        <div class="box-main">
+            <h1 class="text-big" id="program">
+                I Love Aadi
+            </h1>
+            <p class="text-small">
+                I love you so much Aadi, you're my everything. You're the best man I have ever met and I am so grateful that you're mine. You're the cutest, most beautiful, handsome, charming man ever. You are so kind. I'm so lucky to have you, as you're the best thing that has ever happened to me. I cannot imagine a future without you, as now we are one. I feel so protective of you, as I cannot let anything happen to you. If something happened to you, life would amount to nothing for me. You're the reason I wake up in the morning and I want to wake up next to you in the morning.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <h1 class="text-big">How you make me feel :3</h1>
+            <p class="text-small">
+                When I'm with you, I know everything is going to be alright. You're my angel, my safe place. When I'm in your arms, I feel safer than I’ve ever felt, like nothing in the world can harm me. I want to lay with you forever, wrapped up in your arms, and I hate spending even a second away from you. You make me feel like the happiest girl in the world. I never want to lose you, because you’ve become a part of me.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://i.pinimg.com/736x/f5/5f/0b/f55f0bb0058c8b669cc6d9f97e6bfb60.jpg" alt="cute image">
+        </div>
+    </section>
+
+    <div class="kittens">
+        <img src="https://i.pinimg.com/originals/00/8d/de/008ddec7d6c07d03c332e0ea8be3ebd3.jpg" alt="kitten1">
+        <img src="https://i.pinimg.com/736x/16/e2/b2/16e2b2f0a990fa0343c2f3e95318a28f.jpg" alt="kitten2">
+    </div>
+
+    <section id="game">
+        <h1 class="text-big center" id="course">Bubble Pop Game</h1>
+        <div class="bubble" style="left: 10%; animation-duration: 3s;"></div>
+        <div class="bubble" style="left: 30%; animation-duration: 4s;"></div>
+        <div class="bubble" style="left: 50%; animation-duration: 2s;"></div>
+        <div class="bubble" style="left: 70%; animation-duration: 5s;"></div>
+        <div class="bubble" style="left: 90%; animation-duration: 3.5s;"></div>
+    </section>
+
+    <script>
+        function searchText() {
+            const searchTerm = document.getElementById('search').value.trim();
+            if (searchTerm) {
+                const regex = new RegExp(searchTerm, 'gi');
+                const paragraphs = document.querySelectorAll('.text-small');
+
+                paragraphs.forEach((paragraph) => {
+                    const originalText = paragraph.textContent; // Save the original text
+                    paragraph.innerHTML = originalText.replace(regex, (match) => {
+                        return `<span class="highlight">${match}</span>`;
+                    });
+                });
+            }
+        }
+    </script>
+</body>
+</html>
